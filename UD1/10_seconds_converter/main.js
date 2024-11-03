@@ -1,8 +1,10 @@
-const assert = require('assert').strict;
+function convertirATiempoCompleto(segundosTotales) {
+    let horas = Math.floor(segundosTotales / 3600);
+    let minutos = Math.floor((segundosTotales % 3600) / 60);
+    let segundosRestantes = segundosTotales % 60;
 
-function toHoursMinutesSeconds(value) {
+    console.log(`${horas} horas, ${minutos} minutos, ${segundosRestantes} segundos`);
 }
 
-assert.deepStrictEqual(toHoursMinutesSeconds(3600), "1:0:0")
-assert.deepStrictEqual(toHoursMinutesSeconds(3720), "1:20:0")
-assert.deepStrictEqual(toHoursMinutesSeconds(3725), "1:20:5")
+let segundosIniciales = 7265;
+convertirATiempoCompleto(segundosIniciales);

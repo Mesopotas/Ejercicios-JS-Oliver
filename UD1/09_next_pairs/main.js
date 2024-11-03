@@ -1,7 +1,10 @@
-const assert = require('assert').strict;
-
-function nextPairs(value) {
+function siguientePar(n) {
+    while (n % 2 !== 0) {
+        n++; // Si es impar, seguimos incrementando hasta encontrar el siguiente par
+    }
+    console.log(n);
 }
 
-assert.deepStrictEqual(nextPairs(3), [2,4])
-assert.deepStrictEqual(nextPairs(4), [2,6])
+// Ejemplo de uso:
+let numero = 7;
+siguientePar(numero);

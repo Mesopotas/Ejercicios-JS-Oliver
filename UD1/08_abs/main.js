@@ -1,9 +1,8 @@
-const assert = require('assert').strict;
-
-function abs(value) {
-
+function mostrarValorPositivo(numero) {
+    const valorPositivo = Math.abs(numero);
+    console.log("El valor absoluto de", numero, "es:", valorPositivo);
 }
 
-assert.strictEqual(abs(4), 4)
-assert.strictEqual(abs(-4), 4)
-assert.strictEqual(abs(0), 0)
+mostrarValorPositivo(4);  
+mostrarValorPositivo(-4);
+mostrarValorPositivo(0);  

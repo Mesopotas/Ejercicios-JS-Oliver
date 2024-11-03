@@ -12,8 +12,7 @@ function shadow() {
     console.log('valor de test ' + test)
 }
 
-shadow()
-console.log('valor de x ' + x)
+//shadow()
 
 
 function scopes() {
@@ -28,3 +27,5 @@ function scopes() {
 }
 
 scopes()
+
+console.log('valor de x ' + x)

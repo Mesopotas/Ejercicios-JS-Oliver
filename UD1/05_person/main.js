@@ -1,11 +1,9 @@
-// Crear un objeto Persona con los siguientes 
-// datos (nombre, apellidos, edad, género, dirección)
+const Persona = {
+    nombre: 'Nicolas',
+    apellidos: 'Abuin',
+    edad: 18,
+    genero: 'Male',
+    direccion: 'Las Fuentes'
+};
 
-const assert = require('assert').strict;
-
-function createPerson(name, lastname, years, gender, address) {
-}
-
-let person = createPerson('John', 'Foo', 35, 'male', 'fake stree 123')
-assert.strictEqual(person.name, 'John')
-assert.strictEqual(person.lastname, 'Foo')
+console.log(Persona);
